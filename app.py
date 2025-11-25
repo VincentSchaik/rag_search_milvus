@@ -116,26 +116,28 @@ with st.spinner("Initializing Milvus Lite..."):
 # Search interface
 st.markdown("---")
 
-# Example queries - these buttons update session state
+# Example queries - these buttons update session state and trigger rerun
 st.markdown("**Try these examples:**")
 col1, col2, col3 = st.columns(3)
 with col1:
-    if st.button("🤖 AI & ML"):
+    if st.button("🤖 AI & ML", use_container_width=True):
         st.session_state.query = "AI and machine learning technologies"
+        st.rerun()
 with col2:
-    if st.button("💾 Databases"):
+    if st.button("💾 Databases", use_container_width=True):
         st.session_state.query = "database for vector similarity"
+        st.rerun()
 with col3:
-    if st.button("💬 Language"):
+    if st.button("💬 Language", use_container_width=True):
         st.session_state.query = "understanding human text"
+        st.rerun()
 
 # Search input - uses session state
 query = st.text_input(
     "🔎 Enter your search query:",
     value=st.session_state.query,
     placeholder="e.g., AI and machine learning technologies",
-    help="Type any text and find semantically similar documents",
-    key="query_input"
+    help="Type any text and find semantically similar documents"
 )
 
 # Update session state when text input changes
