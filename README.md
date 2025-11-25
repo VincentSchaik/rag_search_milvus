@@ -13,11 +13,11 @@ Milvus Lite is a lightweight version of Milvus that runs locally without requiri
 ## Features Demonstrated
 
 This demo shows how to:
-- ✅ Initialize Milvus Lite client
-- ✅ Create a collection for storing text embeddings
-- ✅ Generate embeddings using sentence-transformers
-- ✅ Insert documents with their vector embeddings
-- ✅ Perform semantic similarity search
+- Initialize Milvus Lite client
+- Create a collection for storing text embeddings
+- Generate embeddings using sentence-transformers
+- Insert documents with their vector embeddings
+- Perform semantic similarity search
 
 ## Prerequisites
 
@@ -107,12 +107,6 @@ Visit the [Milvus documentation](https://milvus.io/docs) for comprehensive guide
 ```bash
 pip install -r requirements.txt
 ```
-
-**TensorFlow/Keras errors**: The demo automatically disables TensorFlow support by setting `os.environ['USE_TF'] = '0'` to avoid compatibility issues. If you still encounter errors, ensure you have compatible versions of transformers and sentence-transformers installed.
-
-**Database file locked**: If you get a database lock error, make sure no other instance of the demo is running.
-
-**Memory issues**: The first run will download the embedding model (~90MB). Ensure you have a stable internet connection.
 
 ## Clean Up
 
