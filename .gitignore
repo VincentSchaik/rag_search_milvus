@@ -28,7 +28,10 @@ ENV/
 
 # Milvus data
 *.db
-milvus_demo.db
+*.db.lock
+*.db-shm
+*.db-wal
+milvus_demo.db*
 
 # IDE
 .vscode/
