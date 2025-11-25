@@ -1,18 +1,18 @@
 # Milvus Lite Text Search Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://rag-search-milvus-vincentschaik.streamlit.app/)
 
 A simple demonstration of using Milvus Lite for semantic text search with vector embeddings.
 
-## 🎮 Live Demo
+## Live Demo
 
-**Try it now:** [Launch Web App →](https://your-app.streamlit.app)
+**Try it now:** [Launch Web App →](https://rag-search-milvus-vincentschaik.streamlit.app/)
 
 Or run locally:
 ```bash
 # Clone the repository
 git clone https://github.com/VincentSchaik/rag_search_milvus.git
-cd yrag_search_milvus
+cd rag_search_milvus
 
 # Install dependencies
 pip install -r requirements.txt
@@ -74,10 +74,10 @@ streamlit run app.py
 Then open your browser to `http://localhost:8501`
 
 Features:
-- 🔍 Interactive search interface
-- 📊 Visual similarity scores
-- 🎯 Example query buttons
-- 📚 Document browser
+- Interactive search interface
+- Visual similarity scores
+- Example query buttons
+- Document browser
 
 ### Option 2: Command Line Demo
 
@@ -133,13 +133,6 @@ Top 3 similar documents:
 
 Your app will be live at `https://your-app.streamlit.app`
 
-### Other Deployment Options
-
-- **Hugging Face Spaces**: Great for ML demos
-- **Railway**: $5/month hobby plan
-- **Render**: Free tier available
-- **Docker**: Use the included Dockerfile (coming soon)
-
 ## Customization
 
 You can modify the demo to:
@@ -173,9 +166,6 @@ This is a basic example. For more advanced use cases, check out:
 - [Milvus Documentation](https://milvus.io/docs) - Complete Milvus guide
 - [Milvus Lite Examples](https://github.com/milvus-io/milvus-lite) - More demo applications
 - [RAG with Milvus](https://milvus.io/docs/integrate_with_langchain.md) - Build retrieval-augmented generation systems
-- [LangChain Integration](https://python.langchain.com/docs/integrations/vectorstores/milvus) - Use Milvus with LangChain
-- [LlamaIndex Integration](https://docs.llamaindex.ai/en/stable/examples/vector_stores/MilvusIndexDemo/) - Use Milvus with LlamaIndex
-- [Image Search Example](https://github.com/milvus-io/bootcamp) - Build image similarity search
 
 ## Contributing
 
@@ -185,12 +175,11 @@ Contributions are welcome! Feel free to:
 - Submit pull requests
 - Improve documentation
 
+## Support
+
+- GitHub Issues: [Report a bug](https://github.com/VincentSchaik/rag_search_milvus/issues)
+- Documentation: [Milvus Docs](https://milvus.io/docs)
+
 ## License
 
 This project is open source and available under the MIT License.
-
-## Support
-
-- GitHub Issues: [Report a bug](https://github.com/yourusername/your-repo-name/issues)
-- Milvus Community: [Join Discord](https://discord.gg/milvus)
-- Documentation: [Milvus Docs](https://milvus.io/docs)
