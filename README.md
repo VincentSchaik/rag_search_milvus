@@ -1,6 +1,28 @@
 # Milvus Lite Text Search Demo
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app)
+
 A simple demonstration of using Milvus Lite for semantic text search with vector embeddings.
+
+## 🎮 Live Demo
+
+**Try it now:** [Launch Web App →](https://your-app.streamlit.app)
+
+Or run locally:
+```bash
+# Clone the repository
+git clone https://github.com/VincentSchaik/rag_search_milvus.git
+cd yrag_search_milvus
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the web app
+streamlit run app.py
+
+# OR run the command-line demo
+python text_search_demo.py
+```
 
 ## What is Milvus Lite?
 
@@ -37,8 +59,27 @@ This will install:
 - `pymilvus` - Milvus Python SDK with Milvus Lite support
 - `sentence-transformers` - For generating text embeddings
 - `numpy` - Numerical computing library
+- `streamlit` - Web application framework
 
 ## Usage
+
+### Option 1: Web App (Interactive)
+
+Run the Streamlit web application:
+
+```bash
+streamlit run app.py
+```
+
+Then open your browser to `http://localhost:8501`
+
+Features:
+- 🔍 Interactive search interface
+- 📊 Visual similarity scores
+- 🎯 Example query buttons
+- 📚 Document browser
+
+### Option 2: Command Line Demo
 
 Run the demo script:
 
@@ -81,6 +122,24 @@ Top 3 similar documents:
 
 3. **Similarity Search**: When you search, your query is converted to a vector, and Milvus finds the most similar document vectors using distance metrics.
 
+## Deployment
+
+### Deploy to Streamlit Community Cloud (Free)
+
+1. Push your code to GitHub
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub repository
+4. Click "Deploy"
+
+Your app will be live at `https://your-app.streamlit.app`
+
+### Other Deployment Options
+
+- **Hugging Face Spaces**: Great for ML demos
+- **Railway**: $5/month hobby plan
+- **Render**: Free tier available
+- **Docker**: Use the included Dockerfile (coming soon)
+
 ## Customization
 
 You can modify the demo to:
@@ -90,31 +149,48 @@ You can modify the demo to:
 - Use different embedding models
 - Change the collection name
 
+## Project Structure
+
+```
+milvus-lite-demo/
+├── app.py                  # Streamlit web application
+├── text_search_demo.py     # Command-line demo
+├── requirements.txt        # Python dependencies
+├── README.md              # This file
+├── .gitignore             # Git ignore rules
+├── .streamlit/
+│   └── config.toml        # Streamlit configuration
+└── .github/
+    ├── copilot-instructions.md
+    └── workflows/
+        └── streamlit.yml  # CI/CD pipeline
+```
+
 ## Learn More
 
 This is a basic example. For more advanced use cases, check out:
 
-- **RAG (Retrieval-Augmented Generation)**: Build question-answering systems
-- **Image Search**: Use Milvus Lite for image similarity search
-- **LangChain Integration**: Combine with LangChain for AI applications
-- **LlamaIndex Integration**: Build knowledge bases and search systems
+- [Milvus Documentation](https://milvus.io/docs) - Complete Milvus guide
+- [Milvus Lite Examples](https://github.com/milvus-io/milvus-lite) - More demo applications
+- [RAG with Milvus](https://milvus.io/docs/integrate_with_langchain.md) - Build retrieval-augmented generation systems
+- [LangChain Integration](https://python.langchain.com/docs/integrations/vectorstores/milvus) - Use Milvus with LangChain
+- [LlamaIndex Integration](https://docs.llamaindex.ai/en/stable/examples/vector_stores/MilvusIndexDemo/) - Use Milvus with LlamaIndex
+- [Image Search Example](https://github.com/milvus-io/bootcamp) - Build image similarity search
 
-Visit the [Milvus documentation](https://milvus.io/docs) for comprehensive guides and examples.
+## Contributing
 
-## Troubleshooting
-
-**Import errors**: Make sure all dependencies are installed:
-```bash
-pip install -r requirements.txt
-```
-
-## Clean Up
-
-To remove the local database file:
-```bash
-rm milvus_demo.db
-```
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Improve documentation
 
 ## License
 
-This demo is provided as-is for educational purposes.
+This project is open source and available under the MIT License.
+
+## Support
+
+- GitHub Issues: [Report a bug](https://github.com/yourusername/your-repo-name/issues)
+- Milvus Community: [Join Discord](https://discord.gg/milvus)
+- Documentation: [Milvus Docs](https://milvus.io/docs)
