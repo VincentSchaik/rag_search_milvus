@@ -1,4 +1,7 @@
 pymilvus>=2.3.0
+milvus-lite>=2.3.0
 sentence-transformers>=2.2.0
 numpy>=1.24.0
 streamlit>=1.28.0
+transformers>=4.30.0
+torch>=2.0.0
